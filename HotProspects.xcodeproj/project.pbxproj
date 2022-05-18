@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2581D7B52817780C00203919 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581D7B42817780C00203919 /* ProspectsView.swift */; };
+		2581D7B72817781300203919 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581D7B62817781300203919 /* MeView.swift */; };
+		2581D7B928177AC100203919 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581D7B828177AC100203919 /* Prospect.swift */; };
+		2581D7BC281783B300203919 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 2581D7BB281783B300203919 /* CodeScanner */; };
+		2581D7BE28178FC700203919 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581D7BD28178FC700203919 /* ImageSaver.swift */; };
+		25A5452E281F697300C88680 /* FileManager-documentsdirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5452D281F697300C88680 /* FileManager-documentsdirectory.swift */; };
 		25AC738A28162CCA001D1995 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC738928162CCA001D1995 /* HotProspectsApp.swift */; };
 		25AC738C28162CCA001D1995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC738B28162CCA001D1995 /* ContentView.swift */; };
 		25AC738E28162CCB001D1995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AC738D28162CCB001D1995 /* Assets.xcassets */; };
@@ -14,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2581D7B42817780C00203919 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		2581D7B62817781300203919 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		2581D7B828177AC100203919 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		2581D7BD28178FC700203919 /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		25A5452D281F697300C88680 /* FileManager-documentsdirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-documentsdirectory.swift"; sourceTree = "<group>"; };
 		25AC738628162CCA001D1995 /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AC738928162CCA001D1995 /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
 		25AC738B28162CCA001D1995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2581D7BC281783B300203919 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,11 @@
 			children = (
 				25AC738928162CCA001D1995 /* HotProspectsApp.swift */,
 				25AC738B28162CCA001D1995 /* ContentView.swift */,
+				2581D7B828177AC100203919 /* Prospect.swift */,
+				25A5452D281F697300C88680 /* FileManager-documentsdirectory.swift */,
+				2581D7B42817780C00203919 /* ProspectsView.swift */,
+				2581D7BD28178FC700203919 /* ImageSaver.swift */,
+				2581D7B62817781300203919 /* MeView.swift */,
 				25AC738D28162CCB001D1995 /* Assets.xcassets */,
 				25AC738F28162CCB001D1995 /* Preview Content */,
 			);
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				2581D7BB281783B300203919 /* CodeScanner */,
+			);
 			productName = HotProspects;
 			productReference = 25AC738628162CCA001D1995 /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 25AC737D28162CCA001D1995;
+			packageReferences = (
+				2581D7BA281783B300203919 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 25AC738728162CCA001D1995 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2581D7B72817781300203919 /* MeView.swift in Sources */,
+				2581D7BE28178FC700203919 /* ImageSaver.swift in Sources */,
+				2581D7B928177AC100203919 /* Prospect.swift in Sources */,
+				2581D7B52817780C00203919 /* ProspectsView.swift in Sources */,
+				25A5452E281F697300C88680 /* FileManager-documentsdirectory.swift in Sources */,
 				25AC738C28162CCA001D1995 /* ContentView.swift in Sources */,
 				25AC738A28162CCA001D1995 /* HotProspectsApp.swift in Sources */,
 			);
@@ -264,11 +292,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DY3G27P9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -281,6 +313,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.solanki.nitish.HotProspects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,11 +325,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DY3G27P9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +346,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.solanki.nitish.HotProspects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2581D7BA281783B300203919 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2581D7BB281783B300203919 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2581D7BA281783B300203919 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25AC737E28162CCA001D1995 /* Project object */;
 }
